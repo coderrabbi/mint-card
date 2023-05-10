@@ -26,7 +26,7 @@ const MintCard = () => {
           </span>
         </div>
         <div className="mintCard">
-          <div>
+          <div className="mintCard__title">
             <h1>NftMontana MINT Template</h1>
             <span>Total supply:667 NFTs</span>
           </div>

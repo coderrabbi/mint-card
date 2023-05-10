@@ -39,10 +39,12 @@
   background-color: rgba(71, 63, 63, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 10px;
-
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 25px;
+  @media screen and (min-width: 768px) {
+    gap: 35px;
+  }
   div {
     h1 {
       font-size: 25px;
@@ -57,10 +59,30 @@
     }
   }
 }
+.mintCard__title {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    gap: 2px;
+  }
+  align-items: center;
+  gap: 5px;
+}
 .mintCard__profile {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
   div {
     img {
       width: 100%;
@@ -72,8 +94,12 @@
 .mint__info {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: end;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: end;
+    align-items: end;
+  }
+  align-items: center;
   gap: 2px;
   color: #fff;
 }
